@@ -1,10 +1,10 @@
 var button = document.getElementById('playBut')
 button.onclick = function() {
-    var audio = new Audio("resources/sound.mp3")
-    audio.loop = true
-    audio.play()
-    document.getElementById("button").remove()
-    document.body.innerHTML = `
+	var audio = new Audio("resources/sound.mp3")
+	audio.loop = true
+	audio.play()
+	document.getElementById("button").remove()
+	document.body.innerHTML = `
                 <div class="pop-up" id=a>
                     <style>
                         body {
@@ -24,8 +24,7 @@ button.onclick = function() {
                     <div class="book-first"></div>
                 </div>    
                 `
-    var s = document.createElement('script');
-    s.setAttribute('src', "./script/letter.js")
-    document.body.appendChild(s)
+	var s = document.createElement('script');
+	s.setAttribute('src', "./script/letter.js")
+	document.body.appendChild(s)
 }
-
